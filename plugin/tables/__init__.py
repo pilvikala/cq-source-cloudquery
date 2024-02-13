@@ -1,1 +1,1 @@
-from .items import Items
+from .plugins import Plugins

@@ -1,11 +1,11 @@
 import sys
 from cloudquery.sdk import serve
 
-from plugin import ExamplePlugin
+from plugin import CloudQueryPlugin
 
 
 def main():
-    p = ExamplePlugin()
+    p = CloudQueryPlugin()
     serve.PluginCommand(p).run(sys.argv[1:])
 
 

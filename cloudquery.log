@@ -1,0 +1,193 @@
+2024-02-12T16:01:49Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:01:49Z ERR exiting with error error="failed to load spec(s) from TestConfig.yaml. Error: source cloudquery references unknown destination sqlite" module=cli
+2024-02-12T16:01:57Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:01:57Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:02:08Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-XnvCzLjTJefPLDVm.sock module=cli
+2024-02-12T16:02:08Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:02:08+02:00 grpc.time_ms=0.016 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:08Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:02:08+02:00 grpc.time_ms=0.079 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:08Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:02:08Z
+2024-02-12T16:02:08Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:02:08+02:00 grpc.time_ms=0.015 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:08Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:02:08Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:02:08+02:00 grpc.time_ms=101.675 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:08Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:02:08Z
+2024-02-12T16:02:08Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:02:08Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:02:08Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-XnvCzLjTJefPLDVm.sock module=cli signal=interrupt
+2024-02-12T16:02:08Z ERR exiting with error error="failed to sync v3 source cloudquery: rpc error: code = Unknown desc = Exception calling application: Spec.__init__() missing 1 required positional argument: 'access_token'" module=cli
+2024-02-12T16:02:33Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:02:34Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:02:34Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-yIPoeKHHYpnLTLqx.sock module=cli
+2024-02-12T16:02:35Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:02:35+02:00 grpc.time_ms=0.026 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:35Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:02:35+02:00 grpc.time_ms=0.23 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:35Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:02:35Z
+2024-02-12T16:02:35Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:02:35+02:00 grpc.time_ms=0.013 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:35Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:02:35Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:02:35+02:00 grpc.time_ms=100.151 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:35Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:02:35Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:02:35Z
+2024-02-12T16:02:35Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:02:35Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:02:35Z INF started call grpc.component=server grpc.error="rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:02:35+02:00 grpc.time_ms=222.855 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:35Z ERR finished call grpc.code=Internal grpc.component=server grpc.error="rpc error: code = Internal desc = failed to receive msg: rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:02:35+02:00 grpc.time_ms=223.52 module=cli peer.address= protocol=grpc
+2024-02-12T16:02:35Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-yIPoeKHHYpnLTLqx.sock module=cli signal=interrupt
+2024-02-12T16:02:35Z ERR exiting with error error="failed to sync v3 source cloudquery: unexpected error from sync client receive: rpc error: code = Unknown desc = Exception iterating responses: module 'pyarrow' has no attribute 'bool'" module=cli
+2024-02-12T16:03:00Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:03:00Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:03:01Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-JvGcOkiaJgDkyghm.sock module=cli
+2024-02-12T16:03:02Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:03:02+02:00 grpc.time_ms=0.016 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:02Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:03:02+02:00 grpc.time_ms=0.261 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:02Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:03:02Z
+2024-02-12T16:03:02Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:02+02:00 grpc.time_ms=0.006 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:02Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:03:02Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:02+02:00 grpc.time_ms=101.193 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:02Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:03:02Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:03:02Z
+2024-02-12T16:03:02Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:03:02Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:03:02Z INF started call grpc.component=server grpc.error="rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:02+02:00 grpc.time_ms=204.972 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:02Z ERR finished call grpc.code=Internal grpc.component=server grpc.error="rpc error: code = Internal desc = failed to receive msg: rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:02+02:00 grpc.time_ms=205.787 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:02Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-JvGcOkiaJgDkyghm.sock module=cli signal=interrupt
+2024-02-12T16:03:02Z ERR exiting with error error="failed to sync v3 source cloudquery: unexpected error from sync client receive: rpc error: code = Unknown desc = Exception iterating responses: module 'pyarrow' has no attribute 'bool'" module=cli
+2024-02-12T16:03:24Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:03:24Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:03:25Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-QWCNVEFBgysQrarG.sock module=cli
+2024-02-12T16:03:26Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:03:26+02:00 grpc.time_ms=0.018 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:26Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:03:26+02:00 grpc.time_ms=0.091 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:26Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:03:26Z
+2024-02-12T16:03:26Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:26+02:00 grpc.time_ms=0.007 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:26Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:03:26Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:26+02:00 grpc.time_ms=74.851 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:26Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:03:26Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:03:26Z
+2024-02-12T16:03:26Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:03:26Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:03:26Z INF started call grpc.component=server grpc.error="rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:26+02:00 grpc.time_ms=169.027 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:26Z ERR finished call grpc.code=Internal grpc.component=server grpc.error="rpc error: code = Internal desc = failed to receive msg: rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:26+02:00 grpc.time_ms=169.84 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:26Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-QWCNVEFBgysQrarG.sock module=cli signal=interrupt
+2024-02-12T16:03:26Z ERR exiting with error error="failed to sync v3 source cloudquery: unexpected error from sync client receive: rpc error: code = Unknown desc = Exception iterating responses: module 'pyarrow' has no attribute 'bool'" module=cli
+2024-02-12T16:03:45Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:03:46Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:03:46Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-bJUjWVnotalXWTKB.sock module=cli
+2024-02-12T16:03:47Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:03:47+02:00 grpc.time_ms=0.023 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:47Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:03:47+02:00 grpc.time_ms=0.223 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:47Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:03:47Z
+2024-02-12T16:03:47Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:47+02:00 grpc.time_ms=0.006 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:47Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:03:47Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:47+02:00 grpc.time_ms=96.995 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:47Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:03:47Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:03:47Z
+2024-02-12T16:03:47Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:03:47Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:03:47Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-bJUjWVnotalXWTKB.sock module=cli signal=interrupt
+2024-02-12T16:03:47Z INF started call grpc.component=server grpc.error="rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:47+02:00 grpc.time_ms=197.952 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:47Z ERR finished call grpc.code=Internal grpc.component=server grpc.error="rpc error: code = Internal desc = failed to receive msg: rpc error: code = Canceled desc = context canceled" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:03:47+02:00 grpc.time_ms=198.994 module=cli peer.address= protocol=grpc
+2024-02-12T16:03:47Z ERR exiting with error error="failed to sync v3 source cloudquery: unexpected error from sync client receive: rpc error: code = Unknown desc = Exception iterating responses: module 'pyarrow' has no attribute 'bool'" module=cli
+2024-02-12T16:04:23Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:04:23Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:04:23Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-AwtNvSXnItiGyrer.sock module=cli
+2024-02-12T16:04:24Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:04:24+02:00 grpc.time_ms=0.022 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:24Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:04:24+02:00 grpc.time_ms=0.227 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:24Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:04:24Z
+2024-02-12T16:04:24Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:04:24+02:00 grpc.time_ms=0.01 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:24Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:04:24Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:04:24+02:00 grpc.time_ms=62.607 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:24Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:04:24Z INF started call grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:04:24+02:00 grpc.time_ms=5.319 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:25Z INF Migrating table module=pg-dest table=plugin
+2024-02-12T16:04:25Z INF finished call grpc.code=OK grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:04:24+02:00 grpc.time_ms=1267.206 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:25Z INF started call grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:04:25+02:00 grpc.time_ms=0.006 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:25Z INF finished call grpc.code=OK grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:04:25+02:00 grpc.time_ms=0.624 module=cli peer.address= protocol=grpc
+2024-02-12T16:04:25Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:04:24Z
+2024-02-12T16:04:25Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:04:26Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:04:26Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-AwtNvSXnItiGyrer.sock module=cli signal=interrupt
+2024-02-12T16:05:04Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:05:05Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:05:05Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-ZINkMxaKCigEzACi.sock module=cli
+2024-02-12T16:05:06Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:05:06+02:00 grpc.time_ms=0.024 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:06Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:05:06+02:00 grpc.time_ms=0.357 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:06Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:05:06Z
+2024-02-12T16:05:06Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:06+02:00 grpc.time_ms=0.021 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:06Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:05:06Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:06+02:00 grpc.time_ms=95.07 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:06Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:05:06Z INF started call grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:06+02:00 grpc.time_ms=4.316 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:07Z INF Migrating table module=pg-dest table=plugin
+2024-02-12T16:05:07Z INF Table exists, auto-migrating module=pg-dest table=plugin
+2024-02-12T16:05:07Z INF finished call grpc.code=OK grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:06+02:00 grpc.time_ms=974.701 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:07Z INF started call grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:07+02:00 grpc.time_ms=0.006 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:07Z INF finished call grpc.code=OK grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:07+02:00 grpc.time_ms=0.482 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:07Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:05:06Z
+2024-02-12T16:05:07Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:05:07Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:05:07Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-ZINkMxaKCigEzACi.sock module=cli signal=interrupt
+2024-02-12T16:05:24Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:05:25Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:05:25Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-tEQuwtLZzMcWKSeC.sock module=cli
+2024-02-12T16:05:26Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:05:26+02:00 grpc.time_ms=0.014 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:26Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:05:26+02:00 grpc.time_ms=0.069 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:26Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:05:26Z
+2024-02-12T16:05:26Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:26+02:00 grpc.time_ms=0.005 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:26Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:05:26Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:26+02:00 grpc.time_ms=97.526 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:26Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:05:26Z INF started call grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:26+02:00 grpc.time_ms=4.981 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:27Z INF finished call grpc.code=Canceled grpc.component=server grpc.error="rpc error: code = Canceled desc = plugin returned error: tables plugin with changes [[column: usd_per_row, type: update, current: usd_per_row:utf8, previous: usd_per_row:uint64]] require migration. Migrate manually or consider using 'migrate_mode: forced'" grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:05:26+02:00 grpc.time_ms=1148.239 module=cli peer.address= protocol=grpc
+2024-02-12T16:05:27Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:05:26Z
+2024-02-12T16:05:27Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:05:27Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:05:27Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-tEQuwtLZzMcWKSeC.sock module=cli signal=interrupt
+2024-02-12T16:05:27Z ERR exiting with error error="failed to sync v3 source cloudquery: write client returned error (insert): plugin returned error: tables plugin with changes [[column: usd_per_row, type: update, current: usd_per_row:utf8, previous: usd_per_row:uint64]] require migration. Migrate manually or consider using 'migrate_mode: forced'" module=cli
+2024-02-12T16:06:51Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-12T16:06:51Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-12T16:06:51Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-ddcFuhefgeMMXtDb.sock module=cli
+2024-02-12T16:06:52Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:06:52+02:00 grpc.time_ms=0.027 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:52Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-12T18:06:52+02:00 grpc.time_ms=0.085 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:52Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:06:52Z
+2024-02-12T16:06:52Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:06:52+02:00 grpc.time_ms=0.01 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:52Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-12T16:06:52Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:06:52+02:00 grpc.time_ms=69.07 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:52Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-12T16:06:52Z INF started call grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:06:52+02:00 grpc.time_ms=13.009 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:53Z INF Migrating table module=pg-dest table=cloudquery_plugins
+2024-02-12T16:06:53Z INF finished call grpc.code=OK grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:06:52+02:00 grpc.time_ms=993.628 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:53Z INF started call grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:06:53+02:00 grpc.time_ms=0.005 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:53Z INF finished call grpc.code=OK grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-12T18:06:53+02:00 grpc.time_ms=0.714 module=cli peer.address= protocol=grpc
+2024-02-12T16:06:53Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-12T16:06:52Z
+2024-02-12T16:06:53Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-12T16:06:54Z INF waiting for source plugin to terminate module=cli
+2024-02-12T16:06:54Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-ddcFuhefgeMMXtDb.sock module=cli signal=interrupt
+2024-02-13T06:36:09Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-13T06:36:10Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-13T06:36:10Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-zJZUDyhCdFdetFlA.sock module=cli
+2024-02-13T06:36:11Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-13T08:36:11+02:00 grpc.time_ms=0.026 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:11Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-13T08:36:11+02:00 grpc.time_ms=0.094 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:11Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-13T06:36:11Z
+2024-02-13T06:36:11Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:11+02:00 grpc.time_ms=0.018 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:11Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-13T06:36:11Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:11+02:00 grpc.time_ms=115.721 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:11Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-13T06:36:11Z
+2024-02-13T06:36:11Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-13T06:36:11Z INF waiting for source plugin to terminate module=cli
+2024-02-13T06:36:11Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-zJZUDyhCdFdetFlA.sock module=cli signal=interrupt
+2024-02-13T06:36:11Z ERR exiting with error error="failed to sync v3 source cloudquery: rpc error: code = Unknown desc = Exception calling application: 'Spec' object has no attribute 'access_token'" module=cli
+2024-02-13T06:36:44Z INF Loading spec(s) args=["TestConfig.yaml"] module=cli
+2024-02-13T06:36:45Z WRN when using the CloudQuery registry, it's recommended to log in via `cloudquery login`. Logging in allows for better rate limits and downloading of premium plugins module=cli
+2024-02-13T06:36:45Z INF Plugin server listening address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-PkbWHiyGMQtCoZIu.sock module=cli
+2024-02-13T06:36:46Z INF started call grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-13T08:36:46+02:00 grpc.time_ms=0.012 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:46Z INF finished call grpc.code=OK grpc.component=server grpc.method=GetVersions grpc.method_type=unary grpc.service=cloudquery.discovery.v1.Discovery grpc.start_time=2024-02-13T08:36:46+02:00 grpc.time_ms=0.058 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:46Z INF Start sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-13T06:36:46Z
+2024-02-13T06:36:46Z INF started call grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:46+02:00 grpc.time_ms=0.016 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:46Z INF Initializing postgresql destination module=pg-dest pgx_log_level=error
+2024-02-13T06:36:46Z INF finished call grpc.code=OK grpc.component=server grpc.method=Init grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:46+02:00 grpc.time_ms=107.613 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:46Z INF Start fetching resources destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)"
+2024-02-13T06:36:46Z INF started call grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:46+02:00 grpc.time_ms=6.985 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:47Z INF Migrating table module=pg-dest table=cloudquery_plugins
+2024-02-13T06:36:47Z INF Table exists, auto-migrating module=pg-dest table=cloudquery_plugins
+2024-02-13T06:36:47Z INF finished call grpc.code=OK grpc.component=server grpc.method=Write grpc.method_type=client_stream grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:46+02:00 grpc.time_ms=1015.025 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:47Z INF started call grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:47+02:00 grpc.time_ms=0.006 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:47Z INF finished call grpc.code=OK grpc.component=server grpc.method=Close grpc.method_type=unary grpc.service=cloudquery.plugin.v3.Plugin grpc.start_time=2024-02-13T08:36:47+02:00 grpc.time_ms=0.67 module=cli peer.address= protocol=grpc
+2024-02-13T06:36:47Z INF End sync destinations=["postgresql (cloudquery@cloudquery/postgresql)"] module=cli source="cloudquery (grpc@localhost:7777)" sync_time=2024-02-13T06:36:46Z
+2024-02-13T06:36:47Z INF Sending sync summary to analyticsv1.cloudquery.io:443 module=cli
+2024-02-13T06:36:47Z INF waiting for source plugin to terminate module=cli
+2024-02-13T06:36:47Z INF Got stop signal. Plugin server shutting down address=/var/folders/sz/4ntlt64d2_g3ttn4cz2pkx7m0000gn/T/cq-PkbWHiyGMQtCoZIu.sock module=cli signal=interrupt

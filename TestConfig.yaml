@@ -1,17 +1,18 @@
 kind: source
 spec:
-  name: "comics"
+  name: "cloudquery"
   registry: "grpc"
   path: "localhost:7777"
   tables: ['*']
-  destinations: ["sqlite"]
+  destinations: ["postgresql"]
   spec:
-    base_url: https://xkcd.com
 ---
 kind: destination
 spec:
-  name: sqlite
-  path: cloudquery/sqlite
-  version: "v2.4.11"
+  name: postgresql
+  path: cloudquery/postgresql
+  registry: cloudquery
+  version: "v6.1.3"
+  write_mode: "append"
   spec:
-    connection_string: ./db.sqlite
+    connection_string: postgresql://cq:password123@localhost:5432/cq-test?sslmode=disable
